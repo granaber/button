@@ -1,0 +1,63 @@
+@import "./../../css/colores.scss";
+//! BUTTOM
+button {
+	outline: none;
+	width: 100%;
+	height: 30px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+button:disabled{
+	background:$disableBkg !important;
+	color:$disableColor !important;
+}
+.btn-primary {
+	background: $primario;
+	color: $primario-text;
+}
+.btn-second {
+	background: $second;
+	color: $second-text;
+}
+.btn-alert {
+	background: $alert;
+	color:  $primario-text;
+  }
+
+/* Ripple effect */
+.ripple {
+	background-position: center;
+	transition: background 0.8s;
+}
+.btn-primary-ripple:hover {
+    opacity: 0.8;
+	background:  $primario radial-gradient(circle, transparent 1%, $primario 1%)
+		center/15000%;
+}
+.btn-primary-ripple:active {
+	background-color: #6eb9f7;
+	background-size: 100%;
+	transition: background 0s;
+}
+
+.btn-second-ripple:hover {
+    opacity: 0.8;
+	background: $second radial-gradient(circle, transparent 1%,  $second 1%)
+		center/15000%;
+}
+.btn-second-ripple:active {
+	background-color: #fff;
+	background-size: 100%;
+	transition: background 0s;
+}
+.btn-alert-ripple:hover {
+    opacity: 0.8;
+	background: $alert radial-gradient(circle, transparent 1%,  $alert 1%)
+		center/15000%;
+}
+.btn-alert-ripple:active {
+	background-color: #fff;
+	background-size: 100%;
+	transition: background 0s;
+}
