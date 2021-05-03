@@ -1,6 +1,6 @@
 {
   "name": "@reaxio/button",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Button componet for Reactjs",
   "main": "./build/index.js",
   "private": false,
