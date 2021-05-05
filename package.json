@@ -1,12 +1,13 @@
 {
   "name": "@reaxio/button",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Button componet for Reactjs",
   "main": "./build/index.js",
   "private": false,
   "scripts": {
     "start": "webpack --mode development --config ./webpack.config.js --watch",
-    "build": "webpack --mode production --config ./webpack.config.js --progress"
+    "build": "webpack --mode production --config ./webpack.config.js --progress",
+    "test": "react-scripts test"
   },
   "homepage": "https://github.com/granaber",
   "repository": {
@@ -17,6 +18,9 @@
   "author": "Angel Granadillo <angelegranadillo@gmail.com> (https://github.com/granaber)",
   "license": "MIT",
   "peerDependencies": {
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
@@ -25,9 +29,13 @@
     "@babel/core": "^7.14.0",
     "@babel/preset-env": "^7.14.0",
     "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/react": "^17.0.5",
+    "@types/react-dom": "^17.0.3",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.4",
     "style-loader": "^2.0.0",
+    "ts-loader": "^9.1.1",
     "webpack": "^5.36.2",
     "webpack-cli": "^4.6.0"
   }
